@@ -17,8 +17,8 @@ description: |
         my-go-program:
           ...
           after: [go]
-      go:
-        source-tag: go1.7.5
+        go:
+          source-tag: go1.7.5
 confinement: strict
 
 parts:
