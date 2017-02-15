@@ -27,6 +27,7 @@ parts:
     build-packages: [golang-go]
     source: https://go.googlesource.com/go
     source-type: git
+    build-packages: [gcc]
     build: cd src && env GOROOT_BOOTSTRAP=$(go env GOROOT | tr -d '\n') ./make.bash
     install: cp -R * $SNAPCRAFT_PART_INSTALL
     prime:
