@@ -24,7 +24,7 @@ confinement: strict
 parts:
   go:
     plugin: nil
-    build-packages: [golang-go, gcc]
+    build-packages: [golang-go, g++]
     source: https://go.googlesource.com/go
     source-type: git
     build: cd src && env GOROOT_BOOTSTRAP=$(go env GOROOT | tr -d '\n') ./make.bash
