@@ -29,5 +29,7 @@ parts:
     source-type: git
     build: cd src && env GOROOT_BOOTSTRAP=$(go env GOROOT | tr -d '\n') ./make.bash
     install: cp -R * $SNAPCRAFT_PART_INSTALL
+    stage:
+      - 'bin'
     prime:
       - '-*'
